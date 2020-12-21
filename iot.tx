@@ -1,0 +1,19 @@
+Program:
+    commands*=Command
+;
+
+Command:
+  RequestCommand | ProvideCommand
+;
+
+RequestCommand:
+  /request\(\'([A-Za-z]:|[A-Za-z0-9]+(\.[A-Za-z0-9]+)*)((\/[A-Za-z0-9_-]+)*)\'\)/
+;
+
+ProvideCommand:
+  /provide\(\'([A-Za-z]:|[A-Za-z0-9]+(\.[A-Za-z0-9]+)*)((\/[A-Za-z0-9_-]+)*)\'\,\'([A-Za-z]:|[A-Za-z0-9\{\}\:\"\s])+\'\)/ 
+;
+
+Comment:
+  /\/\/.*$/
+;
