@@ -35,6 +35,7 @@ python iot_sim1_subs
 
 
 ```sh
+python iot_sim_pub_r
 #Result from connect: Connection Accepted.
 #Subscribed with QoS: 2
 #b'{"SUCCESSFULLY_PROCESSED_COMMAND": "SET_MAX_SPEED"}'
@@ -51,6 +52,7 @@ python iot_sim1_subs
 ```
 ### Resultados en la interfaz
 
+respuesta en la interfaz de iot_sim1_subs 
 ```sh
 #request('vehicles/hola/commands')
 #topic sin comillasvehicles/hola/commands
